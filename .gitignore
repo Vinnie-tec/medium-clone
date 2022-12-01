@@ -34,7 +34,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-sanityyt
-/sanityyt
+sanityytt
+/sanityytt
 node_modules
-/sanityyt/node_modules
+/sanityytt/node_modules
