@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 // import Image from 'next/image';
 
+import Image from "next/image";
 import Link from "next/link";
 
 const Header = () => {
@@ -8,7 +9,7 @@ const Header = () => {
     <header className="flex justify-between p-5 max-w-7xl mx-auto">
       <div className="flex items-center space-x-6">
         <Link href="/">
-          <img
+          <Image
             src="https://ik.imagekit.io/vinnie/Portfolio/medium_GeCnzv-pO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669906270454"
             alt="medium"
             width={70}

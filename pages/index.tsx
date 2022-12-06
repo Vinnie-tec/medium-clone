@@ -36,9 +36,11 @@ export default function Home({ posts }: Props) {
         </div>
 
         <Image
-          src="https://ik.imagekit.io/vinnie/Medium_Website/Mediumm_d2k7zuk7o.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669909244615"
+          src="https://ik.imagekit.io/vinnie/Portfolio/medium_GeCnzv-pO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1669906270454"
           alt="Medium Logo"
           className="hidden md:inline-flex h-32 lg:h-full"
+          width={0}
+          height={0}
         />
       </div>
 
@@ -49,8 +51,8 @@ export default function Home({ posts }: Props) {
               <img
                 src={urlFor(post.mainImage).url()!}
                 alt="qqq"
-                width={120}
-                height={120}
+                width={10}
+                height={10}
                 className=" object-cover group-hover:scale-105 transition-transform duration-200 ease-in-out"
               />
               <div className="flex justify-between p-5 bg-white">

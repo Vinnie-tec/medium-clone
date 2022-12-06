@@ -2,6 +2,9 @@
 const nextConfig = {
   reactStrictMode: false,
   swcMinify: true,
-}
+  images: {
+    domains: ["ik.imagekit.io", "cdn.sanity.io"],
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;

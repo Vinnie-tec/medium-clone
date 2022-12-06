@@ -46,10 +46,12 @@ const Post = ({ post }: Props) => {
     <main>
       <Header />
 
-      <img
+      <Image
         className="w-full h-10 object-cover"
         src={urlFor(post.mainImage).url()!}
         alt="banner"
+        width={30}
+        height={30}
       />
       <article className="max-w-3xl mx-auto p-5">
         <h1 className="text-3xl mt-3">{post.title}</h1>
@@ -62,6 +64,8 @@ const Post = ({ post }: Props) => {
             className="h-10 w-10 rounded-full"
             src={urlFor(post.author.image).url()!}
             alt="banner"
+            width={30}
+            height={30}
           />
           <p className="font-extralight text-sm">
             blog post by{" "}
