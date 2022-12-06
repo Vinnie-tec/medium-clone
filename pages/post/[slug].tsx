@@ -6,6 +6,7 @@ import { Post } from "../../typings";
 
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useState } from "react";
+import Image from "next/image";
 
 interface IformInput {
   _id: string;
@@ -57,7 +58,7 @@ const Post = ({ post }: Props) => {
         </h2>
 
         <div className="flex items-center space-x-2">
-          <img
+          <Image
             className="h-10 w-10 rounded-full"
             src={urlFor(post.author.image).url()!}
             alt="banner"
@@ -96,16 +97,18 @@ const Post = ({ post }: Props) => {
       <hr className="max-w-lg my-5 mx-auto border border-yellow-500" />
 
       <div className="flex flex-col p-10 my-10 max-w-2xl mx-auto shadow-yellow-500 shadow space-y-2">
-        <h3 className="text-4xl">Comment</h3>
-        <hr className="pb-2" />
-        {post.comments.map((comment) => {
-          <div key={comment._id}>
-            <p>
-              <span className="text-yellow-500">{comment.name}</span>:
-              {comment.comment}
-            </p>
-          </div>;
-        })}
+        <>
+          <h3 className="text-4xl">Comment</h3>
+          <hr className="pb-2" />
+          {post.comments.map((comment) => {
+            <div key={comment._id}>
+              <p>
+                <span className="text-yellow-500">{comment.name}</span>:
+                {comment.comment}
+              </p>
+            </div>;
+          })}
+        </>
       </div>
 
       {/* FORM */}

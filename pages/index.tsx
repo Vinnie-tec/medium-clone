@@ -1,6 +1,6 @@
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-// import Image from "next/image";
 import Header from "../components/Header";
 // import styles from "../styles/Home.module.css";
 import { sanityClient, urlFor } from "../sanity";
@@ -35,7 +35,7 @@ export default function Home({ posts }: Props) {
           </h2>
         </div>
 
-        <img
+        <Image
           src="https://ik.imagekit.io/vinnie/Medium_Website/Mediumm_d2k7zuk7o.png?ik-sdk-version=javascript-1.4.3&updatedAt=1669909244615"
           alt="Medium Logo"
           className="hidden md:inline-flex h-32 lg:h-full"
